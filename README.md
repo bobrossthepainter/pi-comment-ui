@@ -8,10 +8,14 @@ The Glimpse mode is intended for Pi sessions running in Docker, a VM, or another
 
 ## Install
 
-Configure npm for GitHub Packages, then install the Pi package:
+GitHub Packages requires npm authentication even for public packages. Create a classic GitHub token with `read:packages`, then log in and install the Pi package:
 
 ```bash
 npm config set @bobrossthepainter:registry https://npm.pkg.github.com
+npm login --scope=@bobrossthepainter --auth-type=legacy --registry=https://npm.pkg.github.com
+# Username: your GitHub username
+# Password: the token with read:packages
+
 pi install npm:@bobrossthepainter/pi-comment-ui
 ```
 

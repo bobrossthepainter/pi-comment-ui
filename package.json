@@ -1,6 +1,6 @@
 {
   "name": "@bobrossthepainter/pi-comment-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Pi extension for commenting on the last assistant response with Pi UI, an external editor, or a Glimpse relay window",
   "license": "MIT",
